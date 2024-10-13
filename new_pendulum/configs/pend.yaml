@@ -13,7 +13,7 @@ loss: Huber
 acts : 
   - tanh
   - 
-epochs: 500
+epochs: 100
 modelsize : 256
 batchsize : 32
 timesize : 32

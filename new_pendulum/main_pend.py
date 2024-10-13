@@ -4,6 +4,7 @@ from utils import *
 import random
 import yaml
 from ghnn_model import *
+from graph_model import GNN_HNN
 import wandb
 from tqdm import tqdm
 
@@ -81,8 +82,8 @@ def new_full(configs):
     model41 = rollout_GNN_GRU(graph4,2,128,8,["tanh"," "],bias=BIAS,type = MODEL,dropout=0.65)
     print(model31)
     print(model41)
-    model32 = GNN_HNN(graph3,2,128,8,["tanh",""],bias =BIAS)
-    model42 = GNN_HNN(graph4,2,128,8,["tanh",""],bias =BIAS)
+    model32 = GNN_HNN(graph3,2,128,8,["tanh",""])
+    model42 = GNN_HNN(graph4,2,128,8,["tanh",""])
     print(model32)
     print(model42)
     
