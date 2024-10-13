@@ -1,0 +1,29 @@
+model: GAT
+sob: 
+  - True
+  - True
+sob_a: 
+  - 1.0
+  - 0.5
+  - 0.15
+a : 0.01
+opti : adamW
+reg : none
+loss: Huber
+acts : 
+  - tanh
+  - 
+epochs: 500
+modelsize : 256
+batchsize : 32
+timesize : 32
+lr: 0.001
+split: 0.9
+device: cpu
+single: False
+noloops: True 
+samples: 10
+max_sim_time: 1000000 # 3 days
+bias: False
+eval: 3
+wandb: False
